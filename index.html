@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>✨ Interactive Web Page</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="themeToggle">Toggle Light/Dark Mode</button>
+
+  <!-- Counter Feature -->
+  <section>
+    <h2>🎮 Counter Game</h2>
+    <button id="increaseBtn">+ Increase</button>
+    <button id="decreaseBtn">- Decrease</button>
+    <p>Count: <span id="counter">0</span></p>
+  </section>
+
+  <!-- Collapsible FAQ -->
+  <section>
+    <h2>❓ FAQ</h2>
+    <button class="faq-toggle">What is JavaScript?</button>
+    <p class="faq-answer hidden">JavaScript makes web pages interactive.</p>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <h2>📋 Register Form</h2>
+    <form id="registerForm">
+      <label>Name: <input type="text" id="name"></label>
+      <span class="error" id="nameError"></span><br><br>
+
+      <label>Email: <input type="text" id="email"></label>
+      <span class="error" id="emailError"></span><br><br>
+
+      <label>Password: <input type="password" id="password"></label>
+      <span class="error" id="passwordError"></span><br><br>
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
